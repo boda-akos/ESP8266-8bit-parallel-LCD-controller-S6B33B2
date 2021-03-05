@@ -11,4 +11,4 @@ Reconfigured TX and RX pins as general I/O pins.
 74HC595 control : D8 data, D4 latch, D3 clock.
 S6B33B2 control : D0 CS, RX GPIO3 RS, TX GPIO0 WR, D2 Reset.
 
-The library should work with any 8-bit TFT if the LCD initial setup in the H file was modified for that particular TFT controller. 
+The library should work with any 8-bit TFT if the LCD initial setup in the cpp file was modified for that particular TFT controller. 
