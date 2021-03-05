@@ -1,7 +1,7 @@
 # ESP8266-8bit-parallel-LCD-controller-S6B33B2
 ESP8266 D1 mini has only a limited number of GPiO pins. To control a 8-bit wide LCD the options are : PCF8574 i2c controller, or a simple shift register. 
 To control the 74HC595 chip we need 3 pins, and for the LCD additional 3 + Reset (not sure if reset is really needed). 
-The simple library links to Adafruit GFX graphics. The hardware uses fast direct port write.
+The simple library links to Adafruit GFX graphics. The hardware uses fast direct port write. It is a lot faster than i2c.
 
 The library has fixed hardware pins, tried to save dedicated pins for SPI and i2c. Reset should be moved to some other pin if i2c is used.
  
