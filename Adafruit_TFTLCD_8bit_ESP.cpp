@@ -19,7 +19,7 @@ Adafruit_TFTLCD_8bit_ESP :: Adafruit_TFTLCD_8bit_ESP(void)
      if (c & 0x80) digitalWrite(dta,1); else digitalWrite(dta,0);   //if (c & 0x80) WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR + 4, 1<<dta ); //data
                                                                     //else WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR + 8, 1<<dta );
     digitalWrite(clk,1);                                            //WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR + 4, 1<<clk );  //clock high
-    c<<1;       
+   c= c<<1;       
  }  //8 bits shifted in
    digitalWrite(ltch,1);                                            //WRITE_PERI_REG(PERIPHS_GPIO_BASEADDR + 4, 1<<ltch );  //latch high
    */
